@@ -1,0 +1,108 @@
+.column {
+  width: calc(25% - 12px);
+  min-width: 250px;
+  max-width: 300px;
+  background: transparent;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.column-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-list {
+  min-height: 100px;
+  margin-bottom: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 8px;
+  flex: 1;
+}
+
+/* Status-specific styles */
+.status-todo {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.status-todo .add-task-button {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.status-todo .add-task-button:hover {
+  background: rgba(59, 130, 246, 0.25);
+}
+
+.status-progress {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.status-progress .add-task-button {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+}
+
+.status-progress .add-task-button:hover {
+  background: rgba(245, 158, 11, 0.25);
+}
+
+.status-review {
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.status-review .add-task-button {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8b5cf6;
+}
+
+.status-review .add-task-button:hover {
+  background: rgba(139, 92, 246, 0.25);
+}
+
+.status-completed {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.status-completed .add-task-button {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.status-completed .add-task-button:hover {
+  background: rgba(16, 185, 129, 0.25);
+}
+
+.add-task-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-task-button svg {
+  width: 16px;
+  height: 16px;
+}
